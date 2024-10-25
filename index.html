@@ -36,22 +36,54 @@
         </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/proff_pic_ani.jpg" alt="Aniruddh_profile_pic">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <h1>Aniruddh Batibrolu</h1>
-            <p class="section__text__p2">Software Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open('./assets/Aniruddh.pdf')">Download Resume</button>
-                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
+
+        <div style="display: flex; align-items: center; padding: 40px; max-width: 1200px; margin: auto;">
+            <!-- Profile Picture on the Left -->
+            <div style="flex-shrink: 0;">
+                <img src="./assets/proff_pic_ani.jpg" 
+                     alt="Aniruddh's Profile Picture" 
+                     style="width: 500px; height: 500px; border-radius: 10%; object-fit: cover;">
             </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My-linked-in" class="icon" onclick="location.href='https://www.linkedin.com/in/aniruddhbatibro'">
-                <img src="./assets/github.png" alt="My-github" class="icon" onclick="location.href='https://github.com/Anibati11'">
+        
+            <!-- Content on the Right -->
+            <div style="flex-grow: 1; margin-left: 200px;">
+                <p style="font-size: 1.2rem; margin-bottom: 5px;">Hello, I'm</p>
+                <h1 style="font-size: 3rem; margin: 0;">Aniruddh Batibrolu</h1>
+                <p style="font-size: 1.5rem; margin-top: 10px;">Software Developer</p>
+        
+                <div style="margin: 20px 0;">
+                    <button class="btn btn-color-1" 
+                            style="margin-right: 10px; padding: 12px 25px; font-size: 1rem;" 
+                            onclick="window.open('./assets/Aniruddh.pdf')">
+                        Download Resume
+                    </button>
+                    <button class="btn btn-color-2" 
+                            style="padding: 12px 25px; font-size: 1rem;" 
+                            onclick="location.href='#contact'">
+                        Contact Info
+                    </button>
+                </div>
+        
+                <div style="display: flex; gap: 20px; margin-top: 15px;">
+                    <img src="./assets/linkedin.png" 
+                         alt="LinkedIn Profile" class="icon" 
+                         style="cursor: pointer; width: 50px; height: 50px;" 
+                         onclick="window.open('https://www.linkedin.com/in/aniruddhbatibro', '_blank')" 
+                         aria-label="LinkedIn Profile">
+        
+                    <img src="./assets/github.png" 
+                         alt="GitHub Profile" class="icon" 
+                         style="cursor: pointer; width: 50px; height: 50px;" 
+                         onclick="window.open('https://github.com/Anibati11', '_blank')" 
+                         aria-label="GitHub Profile">
+                </div>
             </div>
         </div>
+        
+        
+        
+        
+      
     </section>
     <section id = "about">
         <p class="section__text__p1">Get to know more</p>
@@ -59,7 +91,7 @@
         <div class="section-container">
             <div class="section__pic-container">
                 <img 
-                src="./assets/about-pic.png" 
+                src="./assets/proff_photo_ani.jpg" 
                 alt="profile picture" 
                 class="about-pic">
             </div>
